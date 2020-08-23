@@ -65,4 +65,37 @@ $(document).ready(function() {
         // TagCanvas failed to load
         $('#myCanvasContainer').hide();
     }
+
+    if (!$('#myCanvas2').tagcanvas({
+        textColour: '#fff',
+        outlineThickness: 0,
+        maxSpeed: 0.1,
+        depth: 0.75,
+        bgColour: 'tag',
+        padding: 10
+    })) {
+        // TagCanvas failed to load
+        $('#myCanvasContainer2').hide();
+    }
+
+    if (!$('#myCanvas3').tagcanvas({
+        textColour: '#fff',
+        outlineThickness: 0,
+        maxSpeed: 0.1,
+        depth: 0.75,
+        bgColour: 'tag',
+        padding: 10
+    })) {
+        // TagCanvas failed to load
+        $('#myCanvasContainer3').hide();
+    }
 })
+
+window.get_info = function(id) {
+    console.log(id);
+    $.ajax({
+        url: '/main/getinfo?id='+id
+    }).then(res => {
+        console.log(res)
+    })
+}

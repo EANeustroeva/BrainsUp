@@ -43,7 +43,7 @@ class UserController extends AppController {
     }
 
     public function loginAction(){
-        if (User::isAuth()) redirect('/');
+        if (User::isAuth()) redirect('/profile');
         if(!empty($_POST)){
             $user = new User();
             if(!$user->login()){
@@ -60,6 +60,7 @@ class UserController extends AppController {
 
     public function logoutAction(){
         if(isset($_SESSION['user'])) unset($_SESSION['user']);
+        unset($_SESSION['buttons']);
         redirect('/user/login');
     }
 

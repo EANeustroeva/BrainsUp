@@ -77,9 +77,6 @@
             <div class="sidebar">
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                        <!-- <li class="nav-item"><a href="/" class="nav-link <?= 'index' == $route['action'] ? 'active' : '' ?>"><i class="nav-icon fas fa-tachometer-alt"></i> -->
-                                <!-- <p>Панель</p> -->
-                            <!-- </a></li> -->
                         <?php foreach ($menu as $url => $item) : ?>
                             <li class="nav-item">
                                 <a href="/<?= $url ?>" class="nav-link <?= $url == $route['action'] ? 'active' : '' ?>">
@@ -88,6 +85,10 @@
                                 </a>
                             </li>
                         <?php endforeach; ?>
+
+                        <li class="nav-item"><a href="/" class="nav-link <?= 'index' == $route['action'] ? 'active' : '' ?>"><i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>Дашборд работодателя</p>
+                            </a></li>
                         <!-- <li class="nav-item has-treeview menu-open">
                         <a href="#" class="nav-link active">
                             <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -173,16 +174,6 @@
         </aside>
     </div>
 
-    <script src="/adminlte3/plugins/jquery/jquery.min.js"></script>
-    <script src="/adminlte3/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/adminlte3/dist/js/adminlte.min.js"></script>
-
-    <?php
-    foreach ($scripts as $script) {
-        echo $script;
-    }
-    ?>
-
     <?php
     $files =  scandir('/home/s/sanchozzz/rosatom.sanchozzz.beget.tech/public_html/dist');
 
@@ -192,11 +183,11 @@
     }
     ?>
 
-    <script>
-        $(function() {
-
-        })
-    </script>
+<?php
+    foreach ($scripts as $script) {
+        echo $script;
+    }
+?>
 
     <script>
         $(function() {
@@ -211,6 +202,11 @@
 </html>
 
 <style>
+    .highlight {
+        background-color:#125372;
+        color:#fff;
+        padding:3px 6px;
+    }
     .content-wrapper>.content {
         padding: .5rem;
     }

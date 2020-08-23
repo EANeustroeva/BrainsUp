@@ -7,11 +7,21 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'EasyPeasyICS' => $vendorDir . '/phpmailer/phpmailer/extras/EasyPeasyICS.php',
+    'LittleYoutube\\Channel' => $vendorDir . '/scarletsfiction/littleyoutube/src/LittleYoutube.php',
+    'LittleYoutube\\LittleYoutube' => $vendorDir . '/scarletsfiction/littleyoutube/src/LittleYoutube.php',
+    'LittleYoutube\\LittleYoutubeInfo' => $vendorDir . '/scarletsfiction/littleyoutube/src/LittleYoutube.php',
+    'LittleYoutube\\Playlist' => $vendorDir . '/scarletsfiction/littleyoutube/src/LittleYoutube.php',
+    'LittleYoutube\\Search' => $vendorDir . '/scarletsfiction/littleyoutube/src/LittleYoutube.php',
+    'LittleYoutube\\Video' => $vendorDir . '/scarletsfiction/littleyoutube/src/LittleYoutube.php',
     'PHPMailer' => $vendorDir . '/phpmailer/phpmailer/class.phpmailer.php',
     'PHPMailerOAuth' => $vendorDir . '/phpmailer/phpmailer/class.phpmaileroauth.php',
     'PHPMailerOAuthGoogle' => $vendorDir . '/phpmailer/phpmailer/class.phpmaileroauthgoogle.php',
     'POP3' => $vendorDir . '/phpmailer/phpmailer/class.pop3.php',
     'SMTP' => $vendorDir . '/phpmailer/phpmailer/class.smtp.php',
+    'ScarletsFiction\\Extra' => $vendorDir . '/scarletsfiction/littleyoutube/src/LittleYoutube.php',
+    'ScarletsFiction\\FileApi' => $vendorDir . '/scarletsfiction/littleyoutube/src/LittleYoutube.php',
+    'ScarletsFiction\\Stream' => $vendorDir . '/scarletsfiction/littleyoutube/src/LittleYoutube.php',
+    'ScarletsFiction\\WebApi' => $vendorDir . '/scarletsfiction/littleyoutube/src/LittleYoutube.php',
     'ntlm_sasl_client_class' => $vendorDir . '/phpmailer/phpmailer/extras/ntlm_sasl_client.php',
     'phpmailerException' => $vendorDir . '/phpmailer/phpmailer/class.phpmailer.php',
 );
